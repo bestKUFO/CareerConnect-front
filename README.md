@@ -1,3 +1,7 @@
+# 취업 준비생을 위한 실시간 채팅 애플리케이션
+## 백엔드(springboot)주소
+## https://github.com/sunnnycode/CareerConnect-back
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
