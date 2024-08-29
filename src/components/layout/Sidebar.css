@@ -1,0 +1,138 @@
+.sidebar-container {
+    position: relative;
+}
+
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 250px;
+    background-color: #f0f0f0;
+    border-right: 1px solid #e0e0e0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 95.8vh;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.sidebar.visible {
+    transform: translateX(0);
+}
+
+.sidebar-header {
+    background-color: #f0f0f0;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+
+.sidebar-header h2 {
+    font-size: 24px;
+    margin: 0;
+}
+
+.sidebar-content {
+    flex-grow: 1;
+    overflow-y: auto;
+}
+
+.sidebar-item-container {
+    margin-bottom: 10px;
+}
+
+.sidebar-item {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    text-decoration: none;
+    color: #333;
+}
+
+.sidebar-item:hover {
+    background-color: #e0e0e0;
+}
+
+.sidebar-icon {
+    margin-right: 10px;
+    font-size: 20px;
+}
+
+.sidebar-submenu {
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+.sidebar-subitem {
+    padding: 10px 15px;
+    display: block;
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.sidebar-subitem:hover {
+    background-color: #e0e0e0;
+}
+
+.create-room-container {
+    padding: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.create-room-toggle-btn,
+.create-room-btn,
+.create-room-cancel-btn {
+    padding: 10px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.create-room-input {
+    width: calc(100% - 22px);
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.create-room-btn:hover,
+.create-room-cancel-btn:hover,
+.create-room-toggle-btn:hover {
+    background-color: #2980b9;
+}
+
+.sidebar-footer {
+    margin-top: auto;
+    padding-top: 20px;
+    border-top: 1px solid #e0e0e0;
+}
+
+.logout-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #e74c3c;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logout-btn:hover {
+    background-color: #c0392b;
+}
+
+.logout-btn .sidebar-icon {
+    margin-right: 10px;
+}
