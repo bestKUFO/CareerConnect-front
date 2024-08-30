@@ -24,7 +24,7 @@ const Chat = () => {
         const savedFriends = localStorage.getItem('friends');
         return savedFriends ? JSON.parse(savedFriends) : [
             { id: 1, name: '나', message: '안녕하세요', isOnline: true },
-            { id: 2, name: 'AI', message: '오늘도 열심히', isOnline: false },
+            { id: 2, name: 'AI', message: '오늘도 열심히', isOnline: true },
             { id: 3, name: '친구', message: '안녕하세요', isOnline: true },
         ];
     });
@@ -80,10 +80,10 @@ const Chat = () => {
         try {
             const response = await axios.get('http://localhost:8080/open-api/gpt/api-key'); // API 키를 백엔드에서 가져오기
             const apiKey = response.data.key;
-            console.log("Fetched API Key:", apiKey);
+            console.log("API KEY 정상출력");
             return apiKey;
         } catch (error) {
-            console.error('Error fetching API key:', error);
+            console.error('Error API key:', error);
         }
     };
 
